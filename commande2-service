@@ -1,0 +1,15 @@
+# Configuration de la base de données H2 en mémoire
+spring.datasource.url=jdbc:h2:mem:commande-db
+spring.h2.console.enabled=true
+
+# Propriétés personnalisées pour le microservice-commandes2
+mes-config-ms.commandes2-last=15
+
+# Propriétés du service de commande2
+commande2.service.default.currency=USD
+commande2.service.default.language=en
+commande2.service.default.region=NorthAmerica
+
+# Actuator configuration for health checks
+management.endpoints.web.exposure.include=health,info
+management.endpoint.health.show-details=always
